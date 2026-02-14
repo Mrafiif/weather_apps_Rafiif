@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundweatherapps"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:text="Jakarta"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/hari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Today"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/keterangan_cuaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Heavy Rain"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/gambar_hujan"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cerah" />
+
+    <TextView
+        android:id="@+id/info_suhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="0'C"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Cuaca Harian"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/cuaca_mingguan">
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rainy"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari1"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari1"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan" >
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cloudy"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari2"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari2"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan" >
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/storm"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari3"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari3"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan" >
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cloudy"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari4"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan">
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sun"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari5"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari5"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan" >
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/storm"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari6"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari6"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/cuaca_mingguan" >
+
+                <TextView
+                    android:id="@+id/tv_tanggalhari7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="May, 26 - 2025"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cuacaHari7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rainy"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/tv_tanggalhari7"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/Kondisi_cuaca_hari7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi Cuaca"
+                    android:layout_below="@+id/img_cuacaHari7"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/buttonPilihKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih kota lain"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1995E9"
+        android:textColor="@android:color/white"
+        android:padding="8dp"/>
+
+
+
+</LinearLayout>
